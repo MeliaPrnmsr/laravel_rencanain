@@ -10,6 +10,14 @@ class Workspace extends Model
     protected $primaryKey = 'id_projek';
     protected $guarded = ['id_projek'];
 
+    protected $fillable = [
+        'nama_projek',
+        'deskripsi',
+        'status',
+        'creator'
+    ];
+    
+
 
     public function creator()
     {
